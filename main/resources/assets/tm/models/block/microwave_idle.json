@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "tm:blocks/microwave_top",
+        "front": "tm:blocks/microwave_front_off",
+        "side": "tm:blocks/microwave_side"
+    }
+}

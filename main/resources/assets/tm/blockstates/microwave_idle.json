@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=north": { "model": "tm:microwave_idle" },
+        "facing=south": { "model": "tm:microwave_idle", "y": 180 },
+        "facing=west":  { "model": "tm:microwave_idle", "y": 270 },
+        "facing=east":  { "model": "tm:microwave_idle", "y": 90 },
+        "normal": {"model": "tm:microwave_idle"}
+    }
+}
