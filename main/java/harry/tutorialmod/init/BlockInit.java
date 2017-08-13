@@ -4,6 +4,8 @@ import harry.tutorialmod.TutorialMod;
 import harry.tutorialmod.init.blocks.CustomBlockStairs;
 import harry.tutorialmod.init.blocks.CustomIngotBlock;
 import harry.tutorialmod.init.blocks.CustomOre;
+import harry.tutorialmod.init.blocks.fence.CustomBlockFence;
+import harry.tutorialmod.init.blocks.fence.CustomBlockFenceGate;
 import harry.tutorialmod.init.blocks.slab.CustomBlockDoubleSlab;
 import harry.tutorialmod.init.blocks.slab.CustomBlockHalfSlab;
 import net.minecraft.block.Block;
@@ -21,6 +23,8 @@ public class BlockInit
 	public static Block tutorial_stairs;
 	public static CustomBlockHalfSlab tutorial_slab_half;
 	public static CustomBlockDoubleSlab tutorial_slab_double;
+	public static CustomBlockFence tutorial_fence;
+	public static CustomBlockFenceGate tutorial_fence_gate;
 	
 	public static void init()
 	{
@@ -31,6 +35,8 @@ public class BlockInit
 		tutorial_stairs = new CustomBlockStairs("tutorial_stairs", tutorial_block.getDefaultState());
 		tutorial_slab_half = new CustomBlockHalfSlab("tutorial_slab_half", 2.5F, 4.5F);
 		tutorial_slab_double = new CustomBlockDoubleSlab("tutorial_slab_double", 2.5F, 4.5F);
+		tutorial_fence = new CustomBlockFence("tutorial_fence", 2.5F, 4.5F);
+		tutorial_fence_gate = new CustomBlockFenceGate("tutorial_fence_gate", 2.5F, 4.5F);
 	}
 	
 	public static void register()
@@ -42,6 +48,8 @@ public class BlockInit
 		registerBlock(tutorial_stairs);
 		registerBlock(tutorial_slab_half, new ItemSlab(tutorial_slab_half, tutorial_slab_half, tutorial_slab_double));
 		ForgeRegistries.BLOCKS.register(tutorial_slab_double);
+		registerBlock(tutorial_fence);
+		registerBlock(tutorial_fence_gate);
 	}
 	
 	public static void registerBlock(Block block)
