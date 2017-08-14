@@ -1,0 +1,118 @@
+---- Minecraft Crash Report ----
+// Oops.
+
+Time: 8/8/17 9:40 AM
+Description: Rendering screen
+
+java.lang.ArithmeticException: / by zero
+	at harry.testmod.tileentity.TileEntityMicrowave.getCookProgressScaled(TileEntityMicrowave.java:515)
+	at harry.testmod.gui.GuiMicrowave.drawGuiContainerBackgroundLayer(GuiMicrowave.java:56)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93)
+	at harry.testmod.gui.GuiMicrowave.drawScreen(GuiMicrowave.java:32)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:349)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1168)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1192)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:436)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at harry.testmod.tileentity.TileEntityMicrowave.getCookProgressScaled(TileEntityMicrowave.java:515)
+	at harry.testmod.gui.GuiMicrowave.drawGuiContainerBackgroundLayer(GuiMicrowave.java:56)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:93)
+	at harry.testmod.gui.GuiMicrowave.drawScreen(GuiMicrowave.java:32)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:349)
+
+-- Screen render details --
+Details:
+	Screen name: harry.testmod.gui.GuiMicrowave
+	Mouse location: Scaled: (240, 132). Absolute: (960, 528)
+	Screen size: Scaled: (480, 265). Absolute: (1920, 1057). Scale factor of 4
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player70'/316, l='MpServer', x=78.03, y=70.00, z=256.48]]
+	Chunk stats: MultiplayerChunkCache: 552, 552
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (76,64,256), Chunk: (at 12,4,0 in 4,16; contains blocks 64,0,256 to 79,255,271), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 86529 game time, 18132 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: true), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 68 total; [EntityPig['Pig'/131, l='MpServer', x=55.50, y=85.00, z=177.50], EntityCow['Cow'/132, l='MpServer', x=55.17, y=84.00, z=189.52], EntityCow['Cow'/133, l='MpServer', x=52.20, y=86.00, z=183.52], EntityPig['Pig'/134, l='MpServer', x=58.67, y=85.00, z=183.49], EntityPig['Pig'/135, l='MpServer', x=51.47, y=70.00, z=204.30], EntityCow['Cow'/136, l='MpServer', x=56.47, y=81.00, z=195.17], EntityPig['Pig'/137, l='MpServer', x=57.29, y=71.00, z=225.39], EntityPig['Pig'/139, l='MpServer', x=50.80, y=71.00, z=223.79], EntityBat['Bat'/10251, l='MpServer', x=64.63, y=23.98, z=301.44], EntityCow['Cow'/140, l='MpServer', x=54.45, y=71.00, z=230.29], EntityBat['Bat'/141, l='MpServer', x=59.54, y=52.10, z=241.75], EntityBat['Bat'/10253, l='MpServer', x=86.75, y=35.00, z=219.25], EntityCow['Cow'/142, l='MpServer', x=52.19, y=77.00, z=284.48], EntityCow['Cow'/143, l='MpServer', x=62.20, y=77.00, z=286.54], EntityCow['Cow'/144, l='MpServer', x=61.77, y=77.00, z=284.46], EntityPlayerSP['Player70'/316, l='MpServer', x=78.03, y=70.00, z=256.48], EntityPig['Pig'/151, l='MpServer', x=75.67, y=80.00, z=179.51], EntityPig['Pig'/152, l='MpServer', x=60.66, y=85.00, z=177.50], EntityCow['Cow'/153, l='MpServer', x=84.22, y=75.00, z=198.47], EntityPig['Pig'/154, l='MpServer', x=77.46, y=77.00, z=195.73], EntityCow['Cow'/155, l='MpServer', x=71.65, y=74.00, z=209.40], EntityCow['Cow'/156, l='MpServer', x=66.78, y=72.00, z=214.51], EntityCow['Cow'/157, l='MpServer', x=77.48, y=71.00, z=213.82], EntityCow['Cow'/158, l='MpServer', x=71.77, y=72.00, z=215.49], EntityBat['Bat'/159, l='MpServer', x=66.25, y=60.10, z=229.75], EntityPig['Pig'/160, l='MpServer', x=73.75, y=65.00, z=229.47], EntityPig['Pig'/161, l='MpServer', x=76.48, y=69.00, z=251.30], EntityCow['Cow'/162, l='MpServer', x=68.49, y=79.00, z=296.20], EntityCow['Cow'/163, l='MpServer', x=69.47, y=79.00, z=304.82], EntityPig['Pig'/168, l='MpServer', x=94.51, y=74.00, z=176.74], EntityCow['Cow'/169, l='MpServer', x=86.22, y=69.00, z=211.55], EntityCow['Cow'/171, l='MpServer', x=97.20, y=69.00, z=286.51], EntityBat['Bat'/180, l='MpServer', x=111.30, y=18.10, z=243.53], EntityCow['Cow'/181, l='MpServer', x=106.02, y=72.00, z=271.46], EntityCow['Cow'/182, l='MpServer', x=101.47, y=70.00, z=285.15], EntitySquid['Squid'/183, l='MpServer', x=100.02, y=61.51, z=304.46], EntityCow['Cow'/184, l='MpServer', x=97.50, y=68.00, z=289.22], EntityCow['Cow'/193, l='MpServer', x=126.61, y=69.00, z=223.45], EntityCow['Cow'/194, l='MpServer', x=124.38, y=68.00, z=242.21], EntitySheep['Sheep'/195, l='MpServer', x=115.27, y=81.00, z=323.30], EntityCow['Cow'/204, l='MpServer', x=133.40, y=67.00, z=196.80], EntityCow['Cow'/205, l='MpServer', x=134.81, y=71.00, z=262.61], EntitySheep['Sheep'/77, l='MpServer', x=9.19, y=63.00, z=308.51], EntityCow['Cow'/206, l='MpServer', x=131.82, y=71.00, z=260.35], EntitySheep['Sheep'/207, l='MpServer', x=128.49, y=86.00, z=328.77], EntityBat['Bat'/83, l='MpServer', x=29.34, y=49.10, z=194.59], EntityPig['Pig'/84, l='MpServer', x=24.55, y=69.00, z=202.48], EntityCow['Cow'/85, l='MpServer', x=18.59, y=69.00, z=209.80], EntityBat['Bat'/12629, l='MpServer', x=0.36, y=18.61, z=270.39], EntityCow['Cow'/86, l='MpServer', x=21.57, y=73.00, z=230.81], EntityCow['Cow'/87, l='MpServer', x=23.86, y=74.00, z=237.18], EntityCow['Cow'/88, l='MpServer', x=20.52, y=70.00, z=266.82], EntityCow['Cow'/89, l='MpServer', x=18.45, y=66.00, z=279.45], EntityCow['Cow'/90, l='MpServer', x=28.27, y=74.00, z=274.83], EntityCow['Cow'/219, l='MpServer', x=153.42, y=68.00, z=212.78], EntitySheep['Sheep'/220, l='MpServer', x=153.27, y=74.00, z=302.50], EntitySheep['Sheep'/221, l='MpServer', x=144.73, y=71.00, z=307.48], EntityBat['Bat'/105, l='MpServer', x=27.82, y=49.63, z=189.26], EntityCow['Cow'/106, l='MpServer', x=39.58, y=71.00, z=213.83], EntityCow['Cow'/107, l='MpServer', x=36.21, y=71.00, z=220.50], EntityBat['Bat'/108, l='MpServer', x=65.50, y=47.05, z=265.50], EntityCow['Cow'/109, l='MpServer', x=32.51, y=72.00, z=228.83], EntityCow['Cow'/110, l='MpServer', x=36.24, y=72.00, z=235.55], EntityCow['Cow'/111, l='MpServer', x=46.49, y=74.00, z=243.23], EntityCow['Cow'/112, l='MpServer', x=47.55, y=73.00, z=241.55], EntityBat['Bat'/114, l='MpServer', x=35.25, y=18.10, z=267.25], EntityCow['Cow'/115, l='MpServer', x=40.78, y=76.00, z=269.56], EntityCow['Cow'/116, l='MpServer', x=42.23, y=77.00, z=275.46]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:456)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2868)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:457)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:26)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_131, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 471279696 bytes (449 MB) / 1742209024 bytes (1661 MB) up to 3810525184 bytes (3634 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.40 Powered by Forge 14.21.1.2415 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	minecraft{1.12} [Minecraft] (minecraft.jar) 
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.12-14.21.1.2415.jar) 
+	UCHIJAAAA	forge{14.21.1.2415} [Minecraft Forge] (forgeSrc-1.12-14.21.1.2415.jar) 
+	UCHIJAAAA	tm{1.0} [testmod] (bin) 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 382.05' Renderer: 'GeForce GTX 1060 3GB/PCIe/SSE2'
+	Launched Version: 1.12
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1060 3GB/PCIe/SSE2 GL version 4.5.0 NVIDIA 382.05, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i3-6100 CPU @ 3.70GHz
