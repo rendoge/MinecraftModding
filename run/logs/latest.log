@@ -1,0 +1,150 @@
+[21:27:17] [main/INFO]: Setting user: Player143
+[21:27:21] [main/WARN]: Skipping bad option: lastServer:
+[21:27:21] [main/INFO]: LWJGL Version: 2.9.4
+[21:27:24] [main/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:testmod
+[21:27:27] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[21:27:27] [Thread-5/INFO]: Initializing LWJGL OpenAL
+[21:27:27] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[21:27:27] [Thread-5/INFO]: OpenAL initialized.
+[21:27:27] [Sound Library Loader/INFO]: Sound engine started
+[21:27:31] [main/INFO]: Created: 512x512 textures-atlas
+[21:27:33] [main/WARN]: Skipping bad option: lastServer:
+[21:27:33] [main/INFO]: Narrator library for x64 successfully loaded
+[21:27:34] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[21:27:41] [Server thread/INFO]: Starting integrated minecraft server version 1.12
+[21:27:41] [Server thread/INFO]: Generating keypair
+[21:27:41] [Server thread/INFO]: Loaded 488 advancements
+[21:27:42] [Server thread/INFO]: Preparing start region for level 0
+[21:27:43] [Server thread/INFO]: Preparing spawn area: 53%
+[21:27:43] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:27:45] [Server thread/INFO]: Player143[local:E:d9d3b7e7] logged in with entity id 399 at (-61.78791164685493, 67.0, 244.80457165243797)
+[21:27:45] [Server thread/INFO]: Player143 joined the game
+[21:27:46] [Server thread/INFO]: Saving and pausing game...
+[21:27:46] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[21:27:46] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@5de5ac2f[id=241b8068-7327-314d-abe2-ee7690220b50,name=Player143,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3161) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_131]
+[21:27:46] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[21:27:46] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[21:27:56] [main/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.get(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1161) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:436) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.inventory.InventoryBasic.<init>(InventoryBasic.java:34) ~[InventoryBasic.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleOpenWindow(NetHandlerPlayClient.java:1192) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.SPacketOpenWindow.processPacket(SPacketOpenWindow.java:47) ~[SPacketOpenWindow.class:?]
+	at net.minecraft.network.play.server.SPacketOpenWindow.processPacket(SPacketOpenWindow.java:11) ~[SPacketOpenWindow.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 15 more
+[21:27:57] [main/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.get(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1161) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:436) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.inventory.InventoryBasic.<init>(InventoryBasic.java:34) ~[InventoryBasic.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleOpenWindow(NetHandlerPlayClient.java:1192) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.SPacketOpenWindow.processPacket(SPacketOpenWindow.java:47) ~[SPacketOpenWindow.class:?]
+	at net.minecraft.network.play.server.SPacketOpenWindow.processPacket(SPacketOpenWindow.java:11) ~[SPacketOpenWindow.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 15 more
+[21:27:57] [main/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.get(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1161) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:436) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.inventory.InventoryBasic.<init>(InventoryBasic.java:34) ~[InventoryBasic.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleOpenWindow(NetHandlerPlayClient.java:1192) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.SPacketOpenWindow.processPacket(SPacketOpenWindow.java:47) ~[SPacketOpenWindow.class:?]
+	at net.minecraft.network.play.server.SPacketOpenWindow.processPacket(SPacketOpenWindow.java:11) ~[SPacketOpenWindow.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 15 more
+[21:27:57] [Server thread/INFO]: Saving and pausing game...
+[21:27:57] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[21:27:58] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[21:27:58] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[21:28:03] [main/INFO]: Stopping!
+[21:28:03] [Server thread/INFO]: Stopping server
+[21:28:03] [Server thread/INFO]: Saving players
+[21:28:03] [Server thread/INFO]: Saving worlds
+[21:28:03] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[21:28:03] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[21:28:03] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[21:28:03] [main/INFO]: SoundSystem shutting down...
+[21:28:04] [main/WARN]: Author: Paul Lamb, www.paulscode.com
