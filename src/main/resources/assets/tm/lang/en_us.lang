@@ -1,0 +1,8 @@
+tile.microwave_active.name=Working Microwave
+tile.microwave_idle.name=Microwave
+tile.pedestal.name=Pedestal
+tile.rf_generator.name=Nether Generator
+
+
+container.rf_generator=Nether Generator
+container.microwave=Microwave

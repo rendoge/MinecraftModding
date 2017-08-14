@@ -1,0 +1,16 @@
+[
+{
+  "modid": "lt2",
+  "name": "Lumber Tycoon 2",
+  "description": "Lumber Tycoon 2 in Minecraft!",
+  "version": "${0.1}",
+  "mcversion": "${1.12}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Diamond Gaming"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

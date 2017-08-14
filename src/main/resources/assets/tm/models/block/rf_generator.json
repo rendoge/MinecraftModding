@@ -1,0 +1,12 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "up": "blocks/netherrack",
+        "down": "blocks/magma",
+        "north": "tm:blocks/rf_generator_blaze",
+        "east": "tm:blocks/rf_generator_ghast",
+        "south": "tm:blocks/rf_generator_magma",
+        "west": "tm:blocks/rf_generator_wither",
+        "particle": "blocks/netherrack"
+    }
+}
