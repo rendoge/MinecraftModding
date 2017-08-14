@@ -4,6 +4,8 @@ import harry.tutorialmod.TutorialMod;
 import harry.tutorialmod.init.blocks.CustomBlockStairs;
 import harry.tutorialmod.init.blocks.CustomIngotBlock;
 import harry.tutorialmod.init.blocks.CustomOre;
+import harry.tutorialmod.init.blocks.activators.CustomBlockButton;
+import harry.tutorialmod.init.blocks.activators.CustomBlockPressurePlate;
 import harry.tutorialmod.init.blocks.fence.CustomBlockFence;
 import harry.tutorialmod.init.blocks.fence.CustomBlockFenceGate;
 import harry.tutorialmod.init.blocks.slab.CustomBlockDoubleSlab;
@@ -25,6 +27,8 @@ public class BlockInit
 	public static CustomBlockDoubleSlab tutorial_slab_double;
 	public static CustomBlockFence tutorial_fence;
 	public static CustomBlockFenceGate tutorial_fence_gate;
+	public static CustomBlockPressurePlate tutorial_pressure_plate;
+	public static CustomBlockButton tutorial_button;
 	
 	public static void init()
 	{
@@ -37,6 +41,8 @@ public class BlockInit
 		tutorial_slab_double = new CustomBlockDoubleSlab("tutorial_slab_double", 2.5F, 4.5F);
 		tutorial_fence = new CustomBlockFence("tutorial_fence", 2.5F, 4.5F);
 		tutorial_fence_gate = new CustomBlockFenceGate("tutorial_fence_gate", 2.5F, 4.5F);
+		tutorial_pressure_plate = new CustomBlockPressurePlate("tutorial_pressure_plate", 2.5F, 4.5F);
+		tutorial_button = new CustomBlockButton("tutorial_button", 2.5F, 4.5F);
 	}
 	
 	public static void register()
@@ -50,6 +56,8 @@ public class BlockInit
 		ForgeRegistries.BLOCKS.register(tutorial_slab_double);
 		registerBlock(tutorial_fence);
 		registerBlock(tutorial_fence_gate);
+		registerBlock(tutorial_button);
+		registerBlock(tutorial_pressure_plate);
 	}
 	
 	public static void registerBlock(Block block)

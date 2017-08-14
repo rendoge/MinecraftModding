@@ -9,6 +9,8 @@ tile.tutorial_slab_half.name=Tutorial Slab
 tile.tutorial_slab_double.name=Tutorial Double Slab
 tile.tutorial_fence.name=Tutorial Fence
 tile.tutorial_fence_gate.name=Tutorial Fence Gate
+tile.tutorial_pressure_plate.name=Tutorial Pressure Plate
+tile.tutorial_button.name=Tutorial Button
 
 tile.tutorial_block.name=Tutorial Block
 
