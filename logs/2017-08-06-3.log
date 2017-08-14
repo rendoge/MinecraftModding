@@ -1,0 +1,155 @@
+[09:55:01] [main/INFO]: Setting user: Player506
+[09:55:04] [main/WARN]: Skipping bad option: lastServer:
+[09:55:04] [main/INFO]: LWJGL Version: 2.9.4
+[09:55:08] [main/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:testmod
+[09:55:10] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[09:55:10] [Thread-5/INFO]: Initializing LWJGL OpenAL
+[09:55:10] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[09:55:10] [Thread-5/INFO]: OpenAL initialized.
+[09:55:10] [Sound Library Loader/INFO]: Sound engine started
+[09:55:13] [main/INFO]: Created: 512x512 textures-atlas
+[09:55:15] [main/WARN]: Skipping bad option: lastServer:
+[09:55:15] [main/INFO]: Narrator library for x64 successfully loaded
+[09:55:16] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[09:55:29] [Server thread/INFO]: Starting integrated minecraft server version 1.12
+[09:55:29] [Server thread/INFO]: Generating keypair
+[09:55:30] [Server thread/INFO]: Loaded 488 advancements
+[09:55:30] [Server thread/INFO]: Preparing start region for level 0
+[09:55:31] [Server thread/INFO]: Preparing spawn area: 55%
+[09:55:31] [Server thread/INFO]: Changing view distance to 12, from 10
+[09:55:32] [Server thread/INFO]: Player506[local:E:534ecc83] logged in with entity id 377 at (73.06388359122914, 70.0, 257.1160301024087)
+[09:55:32] [Server thread/INFO]: Player506 joined the game
+[09:55:34] [Server thread/INFO]: Saving and pausing game...
+[09:55:34] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[09:55:34] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@7bf8d52e[id=0ef55c79-9bc5-371f-96a7-29e4485d0c04,name=Player506,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3716) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2424) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2298) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2211) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4154) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4158) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:5147) [guava-21.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:5153) [guava-21.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3161) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_131]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_131]
+[09:55:34] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[09:55:34] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[09:55:51] [main/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IndexOutOfBoundsException: Index: 36, Size: 36
+	at java.util.concurrent.FutureTask.report(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.get(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1161) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:436) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.IndexOutOfBoundsException: Index: 36, Size: 36
+	at java.util.ArrayList.rangeCheck(Unknown Source) ~[?:1.8.0_131]
+	at java.util.ArrayList.get(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.inventory.Container.getSlot(Container.java:139) ~[Container.class:?]
+	at net.minecraft.inventory.Container.setAll(Container.java:577) ~[Container.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleWindowItems(NetHandlerPlayClient.java:1312) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.SPacketWindowItems.processPacket(SPacketWindowItems.java:68) ~[SPacketWindowItems.class:?]
+	at net.minecraft.network.play.server.SPacketWindowItems.processPacket(SPacketWindowItems.java:13) ~[SPacketWindowItems.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 15 more
+[09:55:54] [main/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IndexOutOfBoundsException: Index: 36, Size: 36
+	at java.util.concurrent.FutureTask.report(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.get(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1161) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:436) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.IndexOutOfBoundsException: Index: 36, Size: 36
+	at java.util.ArrayList.rangeCheck(Unknown Source) ~[?:1.8.0_131]
+	at java.util.ArrayList.get(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.inventory.Container.getSlot(Container.java:139) ~[Container.class:?]
+	at net.minecraft.inventory.Container.setAll(Container.java:577) ~[Container.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleWindowItems(NetHandlerPlayClient.java:1312) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.SPacketWindowItems.processPacket(SPacketWindowItems.java:68) ~[SPacketWindowItems.class:?]
+	at net.minecraft.network.play.server.SPacketWindowItems.processPacket(SPacketWindowItems.java:13) ~[SPacketWindowItems.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 15 more
+[09:55:57] [main/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.lang.IndexOutOfBoundsException: Index: 36, Size: 36
+	at java.util.concurrent.FutureTask.report(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.get(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1161) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:436) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.IndexOutOfBoundsException: Index: 36, Size: 36
+	at java.util.ArrayList.rangeCheck(Unknown Source) ~[?:1.8.0_131]
+	at java.util.ArrayList.get(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.inventory.Container.getSlot(Container.java:139) ~[Container.class:?]
+	at net.minecraft.inventory.Container.setAll(Container.java:577) ~[Container.class:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleWindowItems(NetHandlerPlayClient.java:1312) ~[NetHandlerPlayClient.class:?]
+	at net.minecraft.network.play.server.SPacketWindowItems.processPacket(SPacketWindowItems.java:68) ~[SPacketWindowItems.class:?]
+	at net.minecraft.network.play.server.SPacketWindowItems.processPacket(SPacketWindowItems.java:13) ~[SPacketWindowItems.class:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_131]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_131]
+	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
+	... 15 more
+[09:58:45] [Server thread/INFO]: Saving and pausing game...
+[09:58:45] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[09:58:45] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[09:58:45] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[09:58:46] [Server thread/INFO]: Saving and pausing game...
+[09:58:47] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[09:58:47] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[09:58:47] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[10:03:30] [Server thread/WARN]: Time ran backwards! Did the system time change?
